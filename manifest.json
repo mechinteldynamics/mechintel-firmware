@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "boards": [
+    {
+      "id": "vajra-f4",
+      "name": "VAJRA F4",
+      "mcu": "STM32F405",
+      "match": ["VAJRAF4"],
+      "firmware": []
+    }
+  ]
+}

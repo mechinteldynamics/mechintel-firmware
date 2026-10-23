@@ -1,0 +1,6 @@
+# Firmware files belong in GitHub Releases, not in git history.
+*.hex
+*.bin
+*.apj
+__pycache__/
+.DS_Store

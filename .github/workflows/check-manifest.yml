@@ -1,0 +1,21 @@
+name: Check manifest
+
+# Runs on every change to the firmware list: valid JSON, required fields, working links,
+# and every build's CRC matches its file. A failing check blocks a broken list from going live
+# when changes go through pull requests.
+on:
+  push:
+    paths: ["manifest.json", "tools/check_manifest.py", ".github/workflows/check-manifest.yml"]
+  pull_request:
+    paths: ["manifest.json", "tools/check_manifest.py", ".github/workflows/check-manifest.yml"]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python tools/check_manifest.py
