@@ -9,7 +9,7 @@ offer them in its Firmware Flasher (Tools → Firmware Flasher → Online).
 - Firmware files (`.hex`) are attached to **GitHub Releases**, not committed to the repo.
 - `tools/check_manifest.py` — checks the list; also runs automatically on GitHub for every change.
 
-The app reads `https://raw.githubusercontent.com/<org>/<repo>/main/manifest.json`. Changes reach
+The app reads `https://raw.githubusercontent.com/mechinteldynamics/mechintel-firmware/main/manifest.json`. Changes reach
 users within about 5–15 minutes (GitHub's cache plus the app's own), with no app update. This repo
 must stay **public**: the app downloads without logging in.
 
@@ -28,13 +28,13 @@ must stay **public**: the app downloads without logging in.
    {
      "family": "INAV",
      "version": "9.1.0",
-     "url": "https://github.com/<org>/<repo>/releases/download/vajra-f4-inav-9.1.0/inav_9.1.0_VAJRAF4.hex",
+     "url": "https://github.com/mechinteldynamics/mechintel-firmware/releases/download/vajra-f4-inav-9.1.0/inav_9.1.0_VAJRAF4.hex",
      "crc32": "0x595E5931",
      "channel": "stable",
      "recommended": true,
      "date": "2026-10-20",
      "notes": "First release for VAJRA F4.",
-     "notesUrl": "https://github.com/<org>/<repo>/releases/tag/vajra-f4-inav-9.1.0"
+     "notesUrl": "https://github.com/mechinteldynamics/mechintel-firmware/releases/tag/vajra-f4-inav-9.1.0"
    }
    ```
    Move `"recommended": true` off the previous build of the same firmware (one per firmware family).

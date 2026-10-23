@@ -104,7 +104,7 @@ def check(offline):
             flash = DEFAULT_FLASH
         for m in b.get("match", []):
             key = "".join(ch for ch in str(m).upper() if ch not in " _-")
-            if key in seen_match:
+            if key in seen_match and seen_match[key] != b.get("id"):
                 errors.append(f"{where}: match '{m}' is also used by board {seen_match[key]}")
             seen_match[key] = b.get("id")
 

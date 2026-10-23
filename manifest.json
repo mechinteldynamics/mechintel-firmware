@@ -5,8 +5,20 @@
       "id": "vajra-f4",
       "name": "VAJRA F4",
       "mcu": "STM32F405",
-      "match": ["VAJRAF4"],
-      "firmware": []
+      "match": ["VAJRA_F4"],
+      "firmware": [
+        {
+          "family": "INAV",
+          "version": "9.0.1",
+          "url": "https://github.com/mechinteldynamics/mechintel-firmware/releases/download/vajra-f4-inav-9.0.1/inav_9.0.1_VAJRA_F4.hex",
+          "crc32": "0x98059EBF",
+          "channel": "stable",
+          "recommended": true,
+          "date": "2026-10-23",
+          "notes": "First release for VAJRA F4.",
+          "notesUrl": "https://github.com/mechinteldynamics/mechintel-firmware/releases/tag/vajra-f4-inav-9.0.1"
+        }
+      ]
     }
   ]
 }
