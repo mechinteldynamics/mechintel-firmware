@@ -8,6 +8,7 @@
 
 | Firmware | Version | Release | Notes |
 |---|---|---|---|
-| INAV | 9.0.1 | `vajra-f4-inav-9.0.1` | First release. Recommended. CRC 0x98059EBF, 586,552 bytes. |
+| INAV | 9.0.1 | `vajra-f4-inav-9.0.1` | First release. Not Recommended. CRC 0x98059EBF, 586,552 bytes. |
+| INAV | 9.0.1 | `vajra-f4-inav-MX25P16-flash-9.0.1` | New release for latest VAJRA F4 modification with MX25P16 flash. Recommended. |
 
-Release names follow `vajra-f4-<firmware>-<version>`, e.g. `vajra-f4-inav-9.1.0`.
+Release names follow `vajra-f4-<firmware>-<additional info>-<version>`, e.g. `vajra-f4-inav-9.1.0`.
