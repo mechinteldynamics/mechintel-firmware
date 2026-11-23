@@ -22,7 +22,7 @@
           "family": "INAV",
           "version": "9.0.1",
           "url": "https://github.com/mechinteldynamics/mechintel-firmware/releases/download/vajra-f4-inav-MX25P16-flash-9.0.1/inav_9.0.1_VAJRA_F4.hex",
-          "crc32": "0x02C5BDA6",
+          "crc32": "0xE6B23B0D",
           "channel": "stable",
           "recommended": true,
           "date": "2026-11-23",
